@@ -62,7 +62,7 @@ jobs:
           mkdir -p artifacts || true
           echo "{\"pr_url\": \"$PR_URL\", \"branch\": \"$BRANCH\"}" > artifacts/pr_info.json
 
-      - name: Notify via Telegram (only when new CSVs)
+      - name: Notify via Telegram
         if: always()
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
@@ -73,13 +73,18 @@ jobs:
           set -e
           ART=artifacts/new_csvs.json
           PR_INFO=artifacts/pr_info.json
+
+          # if artifact missing, still notify as 'No new sets found.' to keep clarity
           if [ ! -f "$ART" ]; then
-            echo "No artifact file; nothing to notify."
+            MESSAGE="No new sets found."
+            curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage" -d chat_id="${TELEGRAM_CHAT_ID}" -d text="$MESSAGE"
             exit 0
           fi
+
           NEW_COUNT=$(jq '.new_csvs | length' $ART)
           if [ "$NEW_COUNT" -eq 0 ]; then
-            echo "No new CSVs; nothing to notify."
+            MESSAGE="No new sets found."
+            curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage" -d chat_id="${TELEGRAM_CHAT_ID}" -d text="$MESSAGE"
             exit 0
           fi
 
@@ -87,20 +92,20 @@ jobs:
           BRANCH=$(jq -r '.branch // empty' $PR_INFO 2>/dev/null || echo "")
           PR_URL=$(jq -r '.pr_url // empty' $PR_INFO 2>/dev/null || echo "")
 
-          # build message with raw links to new CSVs on the branch (prefer branch, fallback to main)
           BASE_RAW_URL="https://raw.githubusercontent.com/$REPO"
           TARGET_BRANCH="$BRANCH"
           if [ -z "$TARGET_BRANCH" ] || [ "$TARGET_BRANCH" = "null" ]; then
             TARGET_BRANCH="main"
           fi
 
-          LINES="New CSVs created:\n"
+          # build plain set-name lines with links
+          LINES="New sets found:\n"
           for i in $(jq -r '.new_csvs[] | @base64' $ART); do
             _jq() { echo ${i} | base64 --decode | jq -r ${1}; }
             csvfile=$(_jq '.csv')
             setname=$(_jq '.set_name')
             url="$BASE_RAW_URL/$TARGET_BRANCH/csv_new/$csvfile"
-            LINES="$LINES- $setname: $url\n"
+            LINES="$LINES$setname: $url\n"
           done
 
           if [ -n "$PR_URL" ] && [ "$PR_URL" != "null" ]; then
