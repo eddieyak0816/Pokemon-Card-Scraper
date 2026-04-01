@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# VS Code
+.vscode/
+
+# Data and images
+images/
+csv_new/*.gsheet

@@ -1,0 +1,11 @@
+Image_Names,Card_ID,Card_Name,Super_Type,Types,Set_Name,Number,Rarity,Large_Image_URL,Small_Image_URL,Normal_low,Normal_mid,Normal_high,Normal_market,Normal_directLow,Holofoil_low,Holofoil_mid,Holofoil_high,Holofoil_market,Holofoil_directLow,ReverseHolofoil_low,ReverseHolofoil_mid,ReverseHolofoil_high,ReverseHolofoil_market,ReverseHolofoil_directLow,FirstEditionHolofoil_low,FirstEditionHolofoil_mid,FirstEditionHolofoil_high,FirstEditionHolofoil_market,FirstEditionHolofoil_directLow,FirstEditionNormal_low,FirstEditionNormal_mid,FirstEditionNormal_high,FirstEditionNormal_market,FirstEditionNormal_directLow
+000.jpg,tk1a-1,Bagon,Pokémon,Colorless,EX Trainer Kit Latias,1,,https://images.pokemontcg.io/tk1a/1_hires.png,https://images.pokemontcg.io/tk1a/1.png,,,,,,,,,,,,,,,,,,,,,,,,,
+001.jpg,tk1a-2,Combusken,Pokémon,Fire,EX Trainer Kit Latias,2,,https://images.pokemontcg.io/tk1a/2_hires.png,https://images.pokemontcg.io/tk1a/2.png,,,,,,,,,,,,,,,,,,,,,,,,,
+002.jpg,tk1a-3,Delcatty,Pokémon,Colorless,EX Trainer Kit Latias,3,,https://images.pokemontcg.io/tk1a/3_hires.png,https://images.pokemontcg.io/tk1a/3.png,,,,,,,,,,,,,,,,,,,,,,,,,
+003.jpg,tk1a-4,Latias,Pokémon,Colorless,EX Trainer Kit Latias,4,,https://images.pokemontcg.io/tk1a/4_hires.png,https://images.pokemontcg.io/tk1a/4.png,,,,,,,,,,,,,,,,,,,,,,,,,
+004.jpg,tk1a-5,Numel,Pokémon,Fire,EX Trainer Kit Latias,5,,https://images.pokemontcg.io/tk1a/5_hires.png,https://images.pokemontcg.io/tk1a/5.png,,,,,,,,,,,,,,,,,,,,,,,,,
+005.jpg,tk1a-6,Skitty,Pokémon,Colorless,EX Trainer Kit Latias,6,,https://images.pokemontcg.io/tk1a/6_hires.png,https://images.pokemontcg.io/tk1a/6.png,,,,,,,,,,,,,,,,,,,,,,,,,
+006.jpg,tk1a-7,Torchic,Pokémon,Fire,EX Trainer Kit Latias,7,,https://images.pokemontcg.io/tk1a/7_hires.png,https://images.pokemontcg.io/tk1a/7.png,,,,,,,,,,,,,,,,,,,,,,,,,
+007.jpg,tk1a-8,Potion,Trainer,,EX Trainer Kit Latias,8,,https://images.pokemontcg.io/tk1a/8_hires.png,https://images.pokemontcg.io/tk1a/8.png,,,,,,,,,,,,,,,,,,,,,,,,,
+008.jpg,tk1a-9,Energy Search,Trainer,,EX Trainer Kit Latias,9,,https://images.pokemontcg.io/tk1a/9_hires.png,https://images.pokemontcg.io/tk1a/9.png,,,,,,,,,,,,,,,,,,,,,,,,,
+009.jpg,tk1a-10,Fire Energy,Energy,,EX Trainer Kit Latias,10,,https://images.pokemontcg.io/tk1a/10_hires.png,https://images.pokemontcg.io/tk1a/10.png,,,,,,,,,,,,,,,,,,,,,,,,,
