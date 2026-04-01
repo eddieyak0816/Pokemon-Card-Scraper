@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: '0 6 * * *' # daily at 06:00 UTC
   workflow_dispatch: {}
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   generate:
@@ -12,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -28,10 +34,25 @@ jobs:
         run: |
           python "${{ github.workspace }}/scripts/generate_all_csvs_urls.py"
 
-      - name: Commit and push CSVs
+      - name: Commit changes to branch and open PR if needed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # create branch
+          BRANCH=update-csvs-$(date +%s)
+          git checkout -b "$BRANCH"
           git add csv_new || true
-          git commit -m "Update generated CSVs" || echo "No changes to commit"
-          git push origin HEAD:main || git push
+          if git diff --staged --quiet; then
+            echo "No CSV changes to commit"
+            exit 0
+          fi
+          git commit -m "Update generated CSVs"
+          git push --set-upstream origin "$BRANCH"
+
+          # create PR via API
+          REPO="$GITHUB_REPOSITORY"
+          BODY=$(jq -n --arg b "$BRANCH" --arg m "Update generated CSVs" '{title: "Update generated CSVs", head: $b, base: "main", body: "Automated CSV update"}')
+          curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" https://api.github.com/repos/$REPO/pulls -d "$BODY"
