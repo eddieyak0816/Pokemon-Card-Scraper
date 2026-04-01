@@ -51,6 +51,22 @@ def main():
     # record newly created CSVs this run
     new_csvs = []
 
+    # simulation: if SIMULATE_NEW_SETS.flag exists in repo root, create a small simulated CSV
+    simulate_flag = os.path.join(os.getcwd(), "SIMULATE_NEW_SETS.flag")
+    if os.path.exists(simulate_flag):
+        sim_csv = "SIMULATED_SET.csv"
+        if sim_csv not in existing:
+            rows = [["000.jpg", "sim-card-001", "Sim Card", "Pokémon", "SimType", "Simulated Set", "1", "Common", "https://example.com/large.jpg", "https://example.com/small.jpg"] + [None] * 25]
+            df = pd.DataFrame(rows, columns=COLS)
+            out_path = os.path.join(CSV_DIR, sim_csv)
+            df.to_csv(out_path, index=False)
+            print(f"Wrote {out_path} (1 cards) [SIMULATED]")
+            new_csvs.append({
+                "csv": sim_csv,
+                "set_name": "Simulated Set",
+                "cards": 1
+            })
+
     for s in sets:
         set_name = s.get('name')
         csv_filename = safe_name(set_name) + ".csv"
