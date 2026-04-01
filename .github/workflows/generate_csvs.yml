@@ -43,5 +43,4 @@ jobs:
           title: "Update generated CSVs"
           body: "Automated CSV update"
           base: main
-          files: |
-            csv_new/**
+          path: csv_new
