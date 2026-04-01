@@ -54,7 +54,11 @@ jobs:
 
           # create PR via REST API
           BODY=$(jq -n --arg b "$BRANCH" '{title: "Update generated CSVs", head: $b, base: "main", body: "Automated CSV update"}')
-          curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" https://api.github.com/repos/$REPO/pulls -d "$BODY"
+          PR_RESPONSE=$(curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" https://api.github.com/repos/$REPO/pulls -d "$BODY")
+          PR_URL=$(echo "$PR_RESPONSE" | jq -r '.html_url // empty')
+          if [ -n "$PR_URL" ]; then
+            echo "PR_URL=$PR_URL" >> $GITHUB_ENV
+          fi
 
       - name: Notify via Telegram
         if: always()
@@ -67,5 +71,9 @@ jobs:
         run: |
           set -e
           RUN_URL="https://github.com/$REPO/actions/runs/$RUN_ID"
-          MESSAGE="CSV generator: $JOB_STATUS"
+          RUN_DATE=$(date -u +"%Y-%m-%d %H:%M UTC")
+          MESSAGE="CSV generator: $JOB_STATUS — $RUN_DATE"
+          if [ -n "$PR_URL" ]; then
+            MESSAGE="$MESSAGE — PR: $PR_URL"
+          fi
           curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage" -d chat_id="${TELEGRAM_CHAT_ID}" -d text="$MESSAGE"
