@@ -48,6 +48,9 @@ def main():
     # existing csv set names
     existing = set([f for f in os.listdir(CSV_DIR) if f.lower().endswith('.csv')])
 
+    # record newly created CSVs this run
+    new_csvs = []
+
     for s in sets:
         set_name = s.get('name')
         csv_filename = safe_name(set_name) + ".csv"
@@ -91,8 +94,27 @@ def main():
         df.to_csv(out_path, index=False)
         print(f"Wrote {out_path} ({len(rows)} cards)")
 
+        new_csvs.append({
+            "csv": csv_filename,
+            "set_name": set_name,
+            "cards": len(rows)
+        })
+
         # be polite to raw.githubusercontent
         sleep(0.5)
 
+    return new_csvs
+
+
 if __name__ == '__main__':
-    main()
+    created = main()
+    # After run: write artifact listing newly created CSVs (if any)
+    artifacts_dir = os.path.join(os.getcwd(), "artifacts")
+    os.makedirs(artifacts_dir, exist_ok=True)
+    artifact_path = os.path.join(artifacts_dir, "new_csvs.json")
+    try:
+        with open(artifact_path, "w", encoding="utf-8") as af:
+            json.dump({"new_csvs": created}, af, ensure_ascii=False, indent=2)
+        print(f"Wrote artifact: {artifact_path}")
+    except Exception as e:
+        print(f"Failed to write artifact: {e}")
