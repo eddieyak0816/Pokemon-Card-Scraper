@@ -62,6 +62,14 @@ jobs:
           mkdir -p artifacts || true
           echo "{\"pr_url\": \"$PR_URL\", \"branch\": \"$BRANCH\"}" > artifacts/pr_info.json
 
+      - name: Upload run artifacts (pre-notify)
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-artifacts
+          path: |
+            artifacts/new_csvs.json
+            artifacts/pr_info.json
+
       - name: Notify via Telegram
         if: always()
         env:
@@ -114,4 +122,16 @@ jobs:
             LINES="$LINES\nPR: $PR_URL"
           fi
 
-          curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage" -d chat_id="${TELEGRAM_CHAT_ID}" -d text="$LINES"
+          # send Telegram message and save response for logging
+          TELEGRAM_RESP=$(curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage" -d chat_id="${TELEGRAM_CHAT_ID}" -d text="$LINES")
+          mkdir -p artifacts || true
+          echo "$TELEGRAM_RESP" > artifacts/telegram_response.json
+          echo "$TELEGRAM_RESP"
+
+      - name: Upload telegram response artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        continue-on-error: true
+        with:
+          name: telegram-response
+          path: artifacts/telegram_response.json
