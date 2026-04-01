@@ -104,7 +104,9 @@ jobs:
             _jq() { echo ${i} | base64 --decode | jq -r ${1}; }
             csvfile=$(_jq '.csv')
             setname=$(_jq '.set_name')
-            url="$BASE_RAW_URL/$TARGET_BRANCH/csv_new/$csvfile"
+            # sanitize filename and build URL without trailing whitespace or newlines
+            csvfile=$(printf "%s" "$csvfile" | tr -d '\r\n')
+            url=$(printf "%s" "$BASE_RAW_URL/$TARGET_BRANCH/csv_new/$csvfile")
             LINES="$LINES$setname: $url\n"
           done
 
