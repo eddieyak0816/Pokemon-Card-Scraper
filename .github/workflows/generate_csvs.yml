@@ -2,7 +2,7 @@ name: Generate CSVs
 
 on:
   schedule:
-    - cron: '0 6 * * *' # daily at 06:00 UTC
+    - cron: '49 15 * * *' # daily at 11:49 AM Eastern (15:49 UTC during DST)
   workflow_dispatch: {}
 permissions:
   contents: write
