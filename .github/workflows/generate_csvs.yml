@@ -34,13 +34,24 @@ jobs:
         run: |
           python "${{ github.workspace }}/scripts/generate_all_csvs_urls.py"
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Update generated CSVs"
-          branch: update-csvs-${{ github.run_id }}
-          title: "Update generated CSVs"
-          body: "Automated CSV update"
-          base: main
-          path: csv_new
+      - name: Commit and push CSV changes, open PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BRANCH=update-csvs-$(date +%s)
+          git checkout -b "$BRANCH"
+          git add csv_new || true
+          if git diff --staged --quiet; then
+            echo "No CSV changes to commit"
+            exit 0
+          fi
+          git commit -m "Update generated CSVs"
+          git push --set-upstream origin "$BRANCH"
+
+          # create PR via REST API
+          BODY=$(jq -n --arg b "$BRANCH" '{title: "Update generated CSVs", head: $b, base: "main", body: "Automated CSV update"}')
+          curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" https://api.github.com/repos/$REPO/pulls -d "$BODY"
