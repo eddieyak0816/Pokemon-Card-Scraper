@@ -1,3 +1,864 @@
 {
-  "new_csvs": []
+  "new_csvs": [
+    {
+      "csv": "Team Magma vs Team Aqua.csv",
+      "set_name": "Team Magma vs Team Aqua",
+      "cards": 97
+    },
+    {
+      "csv": "POP Series 6.csv",
+      "set_name": "POP Series 6",
+      "cards": 17
+    },
+    {
+      "csv": "POP Series 3.csv",
+      "set_name": "POP Series 3",
+      "cards": 17
+    },
+    {
+      "csv": "POP Series 7.csv",
+      "set_name": "POP Series 7",
+      "cards": 17
+    },
+    {
+      "csv": "Dragon.csv",
+      "set_name": "Dragon",
+      "cards": 100
+    },
+    {
+      "csv": "Unseen Forces.csv",
+      "set_name": "Unseen Forces",
+      "cards": 145
+    },
+    {
+      "csv": "Aquapolis.csv",
+      "set_name": "Aquapolis",
+      "cards": 182
+    },
+    {
+      "csv": "Delta Species.csv",
+      "set_name": "Delta Species",
+      "cards": 114
+    },
+    {
+      "csv": "Hidden Legends.csv",
+      "set_name": "Hidden Legends",
+      "cards": 102
+    },
+    {
+      "csv": "Base.csv",
+      "set_name": "Base",
+      "cards": 102
+    },
+    {
+      "csv": "Mysterious Treasures.csv",
+      "set_name": "Mysterious Treasures",
+      "cards": 124
+    },
+    {
+      "csv": "POP Series 4.csv",
+      "set_name": "POP Series 4",
+      "cards": 17
+    },
+    {
+      "csv": "Ruby & Sapphire.csv",
+      "set_name": "Ruby & Sapphire",
+      "cards": 109
+    },
+    {
+      "csv": "Best of Game.csv",
+      "set_name": "Best of Game",
+      "cards": 9
+    },
+    {
+      "csv": "Neo Destiny.csv",
+      "set_name": "Neo Destiny",
+      "cards": 113
+    },
+    {
+      "csv": "Crystal Guardians.csv",
+      "set_name": "Crystal Guardians",
+      "cards": 100
+    },
+    {
+      "csv": "Legends Awakened.csv",
+      "set_name": "Legends Awakened",
+      "cards": 146
+    },
+    {
+      "csv": "Power Keepers.csv",
+      "set_name": "Power Keepers",
+      "cards": 108
+    },
+    {
+      "csv": "EX Trainer Kit 2 Plusle.csv",
+      "set_name": "EX Trainer Kit 2 Plusle",
+      "cards": 12
+    },
+    {
+      "csv": "Diamond & Pearl.csv",
+      "set_name": "Diamond & Pearl",
+      "cards": 130
+    },
+    {
+      "csv": "Majestic Dawn.csv",
+      "set_name": "Majestic Dawn",
+      "cards": 100
+    },
+    {
+      "csv": "EX Trainer Kit Latios.csv",
+      "set_name": "EX Trainer Kit Latios",
+      "cards": 10
+    },
+    {
+      "csv": "POP Series 1.csv",
+      "set_name": "POP Series 1",
+      "cards": 17
+    },
+    {
+      "csv": "Deoxys.csv",
+      "set_name": "Deoxys",
+      "cards": 108
+    },
+    {
+      "csv": "Stormfront.csv",
+      "set_name": "Stormfront",
+      "cards": 106
+    },
+    {
+      "csv": "POP Series 9.csv",
+      "set_name": "POP Series 9",
+      "cards": 17
+    },
+    {
+      "csv": "Rising Rivals.csv",
+      "set_name": "Rising Rivals",
+      "cards": 120
+    },
+    {
+      "csv": "Supreme Victors.csv",
+      "set_name": "Supreme Victors",
+      "cards": 153
+    },
+    {
+      "csv": "Arceus.csv",
+      "set_name": "Arceus",
+      "cards": 111
+    },
+    {
+      "csv": "Pokémon Rumble.csv",
+      "set_name": "Pokémon Rumble",
+      "cards": 16
+    },
+    {
+      "csv": "HeartGold & SoulSilver.csv",
+      "set_name": "HeartGold & SoulSilver",
+      "cards": 124
+    },
+    {
+      "csv": "HGSS Black Star Promos.csv",
+      "set_name": "HGSS Black Star Promos",
+      "cards": 25
+    },
+    {
+      "csv": "HS—Unleashed.csv",
+      "set_name": "HS—Unleashed",
+      "cards": 96
+    },
+    {
+      "csv": "HS—Undaunted.csv",
+      "set_name": "HS—Undaunted",
+      "cards": 91
+    },
+    {
+      "csv": "HS—Triumphant.csv",
+      "set_name": "HS—Triumphant",
+      "cards": 103
+    },
+    {
+      "csv": "Call of Legends.csv",
+      "set_name": "Call of Legends",
+      "cards": 106
+    },
+    {
+      "csv": "BW Black Star Promos.csv",
+      "set_name": "BW Black Star Promos",
+      "cards": 101
+    },
+    {
+      "csv": "Black & White.csv",
+      "set_name": "Black & White",
+      "cards": 115
+    },
+    {
+      "csv": "McDonald's Collection 2011.csv",
+      "set_name": "McDonald's Collection 2011",
+      "cards": 12
+    },
+    {
+      "csv": "Emerging Powers.csv",
+      "set_name": "Emerging Powers",
+      "cards": 98
+    },
+    {
+      "csv": "Noble Victories.csv",
+      "set_name": "Noble Victories",
+      "cards": 102
+    },
+    {
+      "csv": "Next Destinies.csv",
+      "set_name": "Next Destinies",
+      "cards": 103
+    },
+    {
+      "csv": "Dark Explorers.csv",
+      "set_name": "Dark Explorers",
+      "cards": 111
+    },
+    {
+      "csv": "Neo Discovery.csv",
+      "set_name": "Neo Discovery",
+      "cards": 75
+    },
+    {
+      "csv": "McDonald's Collection 2012.csv",
+      "set_name": "McDonald's Collection 2012",
+      "cards": 12
+    },
+    {
+      "csv": "Dragon Vault.csv",
+      "set_name": "Dragon Vault",
+      "cards": 21
+    },
+    {
+      "csv": "Dragons Exalted.csv",
+      "set_name": "Dragons Exalted",
+      "cards": 128
+    },
+    {
+      "csv": "Jungle.csv",
+      "set_name": "Jungle",
+      "cards": 64
+    },
+    {
+      "csv": "Boundaries Crossed.csv",
+      "set_name": "Boundaries Crossed",
+      "cards": 153
+    },
+    {
+      "csv": "Plasma Storm.csv",
+      "set_name": "Plasma Storm",
+      "cards": 138
+    },
+    {
+      "csv": "Plasma Freeze.csv",
+      "set_name": "Plasma Freeze",
+      "cards": 122
+    },
+    {
+      "csv": "Plasma Blast.csv",
+      "set_name": "Plasma Blast",
+      "cards": 105
+    },
+    {
+      "csv": "XY Black Star Promos.csv",
+      "set_name": "XY Black Star Promos",
+      "cards": 216
+    },
+    {
+      "csv": "Kalos Starter Set.csv",
+      "set_name": "Kalos Starter Set",
+      "cards": 39
+    },
+    {
+      "csv": "Legendary Treasures.csv",
+      "set_name": "Legendary Treasures",
+      "cards": 140
+    },
+    {
+      "csv": "McDonald's Collection 2014.csv",
+      "set_name": "McDonald's Collection 2014",
+      "cards": 12
+    },
+    {
+      "csv": "XY.csv",
+      "set_name": "XY",
+      "cards": 146
+    },
+    {
+      "csv": "Flashfire.csv",
+      "set_name": "Flashfire",
+      "cards": 110
+    },
+    {
+      "csv": "Southern Islands.csv",
+      "set_name": "Southern Islands",
+      "cards": 18
+    },
+    {
+      "csv": "Phantom Forces.csv",
+      "set_name": "Phantom Forces",
+      "cards": 124
+    },
+    {
+      "csv": "Primal Clash.csv",
+      "set_name": "Primal Clash",
+      "cards": 164
+    },
+    {
+      "csv": "Furious Fists.csv",
+      "set_name": "Furious Fists",
+      "cards": 114
+    },
+    {
+      "csv": "Gym Heroes.csv",
+      "set_name": "Gym Heroes",
+      "cards": 132
+    },
+    {
+      "csv": "Double Crisis.csv",
+      "set_name": "Double Crisis",
+      "cards": 34
+    },
+    {
+      "csv": "McDonald's Collection 2015.csv",
+      "set_name": "McDonald's Collection 2015",
+      "cards": 12
+    },
+    {
+      "csv": "Ancient Origins.csv",
+      "set_name": "Ancient Origins",
+      "cards": 101
+    },
+    {
+      "csv": "Roaring Skies.csv",
+      "set_name": "Roaring Skies",
+      "cards": 112
+    },
+    {
+      "csv": "BREAKthrough.csv",
+      "set_name": "BREAKthrough",
+      "cards": 165
+    },
+    {
+      "csv": "BREAKpoint.csv",
+      "set_name": "BREAKpoint",
+      "cards": 126
+    },
+    {
+      "csv": "Generations.csv",
+      "set_name": "Generations",
+      "cards": 117
+    },
+    {
+      "csv": "Fates Collide.csv",
+      "set_name": "Fates Collide",
+      "cards": 129
+    },
+    {
+      "csv": "McDonald's Collection 2016.csv",
+      "set_name": "McDonald's Collection 2016",
+      "cards": 12
+    },
+    {
+      "csv": "Steam Siege.csv",
+      "set_name": "Steam Siege",
+      "cards": 116
+    },
+    {
+      "csv": "Evolutions.csv",
+      "set_name": "Evolutions",
+      "cards": 113
+    },
+    {
+      "csv": "Wizards Black Star Promos.csv",
+      "set_name": "Wizards Black Star Promos",
+      "cards": 53
+    },
+    {
+      "csv": "Shining Legends.csv",
+      "set_name": "Shining Legends",
+      "cards": 81
+    },
+    {
+      "csv": "Guardians Rising.csv",
+      "set_name": "Guardians Rising",
+      "cards": 180
+    },
+    {
+      "csv": "Burning Shadows.csv",
+      "set_name": "Burning Shadows",
+      "cards": 177
+    },
+    {
+      "csv": "SM Black Star Promos.csv",
+      "set_name": "SM Black Star Promos",
+      "cards": 251
+    },
+    {
+      "csv": "Sun & Moon.csv",
+      "set_name": "Sun & Moon",
+      "cards": 173
+    },
+    {
+      "csv": "Crimson Invasion.csv",
+      "set_name": "Crimson Invasion",
+      "cards": 126
+    },
+    {
+      "csv": "McDonald's Collection 2017.csv",
+      "set_name": "McDonald's Collection 2017",
+      "cards": 12
+    },
+    {
+      "csv": "McDonald's Collection 2018.csv",
+      "set_name": "McDonald's Collection 2018",
+      "cards": 12
+    },
+    {
+      "csv": "Dragon Majesty.csv",
+      "set_name": "Dragon Majesty",
+      "cards": 80
+    },
+    {
+      "csv": "Forbidden Light.csv",
+      "set_name": "Forbidden Light",
+      "cards": 150
+    },
+    {
+      "csv": "Team Rocket.csv",
+      "set_name": "Team Rocket",
+      "cards": 83
+    },
+    {
+      "csv": "Ultra Prism.csv",
+      "set_name": "Ultra Prism",
+      "cards": 178
+    },
+    {
+      "csv": "Celestial Storm.csv",
+      "set_name": "Celestial Storm",
+      "cards": 187
+    },
+    {
+      "csv": "Detective Pikachu.csv",
+      "set_name": "Detective Pikachu",
+      "cards": 18
+    },
+    {
+      "csv": "Skyridge.csv",
+      "set_name": "Skyridge",
+      "cards": 182
+    },
+    {
+      "csv": "Lost Thunder.csv",
+      "set_name": "Lost Thunder",
+      "cards": 240
+    },
+    {
+      "csv": "Team Up.csv",
+      "set_name": "Team Up",
+      "cards": 198
+    },
+    {
+      "csv": "McDonald's Collection 2019.csv",
+      "set_name": "McDonald's Collection 2019",
+      "cards": 12
+    },
+    {
+      "csv": "Hidden Fates.csv",
+      "set_name": "Hidden Fates",
+      "cards": 69
+    },
+    {
+      "csv": "Hidden Fates Shiny Vault.csv",
+      "set_name": "Hidden Fates Shiny Vault",
+      "cards": 94
+    },
+    {
+      "csv": "Unbroken Bonds.csv",
+      "set_name": "Unbroken Bonds",
+      "cards": 238
+    },
+    {
+      "csv": "Sword & Shield.csv",
+      "set_name": "Sword & Shield",
+      "cards": 216
+    },
+    {
+      "csv": "Pokémon Futsal Collection.csv",
+      "set_name": "Pokémon Futsal Collection",
+      "cards": 5
+    },
+    {
+      "csv": "Cosmic Eclipse.csv",
+      "set_name": "Cosmic Eclipse",
+      "cards": 272
+    },
+    {
+      "csv": "Rebel Clash.csv",
+      "set_name": "Rebel Clash",
+      "cards": 209
+    },
+    {
+      "csv": "Champion's Path.csv",
+      "set_name": "Champion's Path",
+      "cards": 80
+    },
+    {
+      "csv": "Darkness Ablaze.csv",
+      "set_name": "Darkness Ablaze",
+      "cards": 201
+    },
+    {
+      "csv": "Unified Minds.csv",
+      "set_name": "Unified Minds",
+      "cards": 261
+    },
+    {
+      "csv": "SWSH Black Star Promos.csv",
+      "set_name": "SWSH Black Star Promos",
+      "cards": 304
+    },
+    {
+      "csv": "Shining Fates.csv",
+      "set_name": "Shining Fates",
+      "cards": 73
+    },
+    {
+      "csv": "EX Trainer Kit Latias.csv",
+      "set_name": "EX Trainer Kit Latias",
+      "cards": 10
+    },
+    {
+      "csv": "Celebrations.csv",
+      "set_name": "Celebrations",
+      "cards": 25
+    },
+    {
+      "csv": "Celebrations Classic Collection.csv",
+      "set_name": "Celebrations: Classic Collection",
+      "cards": 25
+    },
+    {
+      "csv": "Vivid Voltage.csv",
+      "set_name": "Vivid Voltage",
+      "cards": 203
+    },
+    {
+      "csv": "Battle Styles.csv",
+      "set_name": "Battle Styles",
+      "cards": 183
+    },
+    {
+      "csv": "McDonald's Collection 2021.csv",
+      "set_name": "McDonald's Collection 2021",
+      "cards": 25
+    },
+    {
+      "csv": "Fusion Strike.csv",
+      "set_name": "Fusion Strike",
+      "cards": 284
+    },
+    {
+      "csv": "Shining Fates Shiny Vault.csv",
+      "set_name": "Shining Fates Shiny Vault",
+      "cards": 122
+    },
+    {
+      "csv": "Brilliant Stars.csv",
+      "set_name": "Brilliant Stars",
+      "cards": 186
+    },
+    {
+      "csv": "Chilling Reign.csv",
+      "set_name": "Chilling Reign",
+      "cards": 233
+    },
+    {
+      "csv": "Evolving Skies.csv",
+      "set_name": "Evolving Skies",
+      "cards": 237
+    },
+    {
+      "csv": "Astral Radiance Trainer Gallery.csv",
+      "set_name": "Astral Radiance Trainer Gallery",
+      "cards": 30
+    },
+    {
+      "csv": "POP Series 2.csv",
+      "set_name": "POP Series 2",
+      "cards": 17
+    },
+    {
+      "csv": "Pokémon GO.csv",
+      "set_name": "Pokémon GO",
+      "cards": 88
+    },
+    {
+      "csv": "Brilliant Stars Trainer Gallery.csv",
+      "set_name": "Brilliant Stars Trainer Gallery",
+      "cards": 30
+    },
+    {
+      "csv": "McDonald's Collection 2022.csv",
+      "set_name": "McDonald's Collection 2022",
+      "cards": 15
+    },
+    {
+      "csv": "Astral Radiance.csv",
+      "set_name": "Astral Radiance",
+      "cards": 216
+    },
+    {
+      "csv": "Lost Origin Trainer Gallery.csv",
+      "set_name": "Lost Origin Trainer Gallery",
+      "cards": 30
+    },
+    {
+      "csv": "Silver Tempest Trainer Gallery.csv",
+      "set_name": "Silver Tempest Trainer Gallery",
+      "cards": 30
+    },
+    {
+      "csv": "FireRed & LeafGreen.csv",
+      "set_name": "FireRed & LeafGreen",
+      "cards": 116
+    },
+    {
+      "csv": "Scarlet & Violet Energies.csv",
+      "set_name": "Scarlet & Violet Energies",
+      "cards": 16
+    },
+    {
+      "csv": "Lost Origin.csv",
+      "set_name": "Lost Origin",
+      "cards": 217
+    },
+    {
+      "csv": "Crown Zenith Galarian Gallery.csv",
+      "set_name": "Crown Zenith Galarian Gallery",
+      "cards": 70
+    },
+    {
+      "csv": "Silver Tempest.csv",
+      "set_name": "Silver Tempest",
+      "cards": 215
+    },
+    {
+      "csv": "Scarlet & Violet Black Star Promos.csv",
+      "set_name": "Scarlet & Violet Black Star Promos",
+      "cards": 165
+    },
+    {
+      "csv": "Scarlet & Violet.csv",
+      "set_name": "Scarlet & Violet",
+      "cards": 258
+    },
+    {
+      "csv": "Crown Zenith.csv",
+      "set_name": "Crown Zenith",
+      "cards": 160
+    },
+    {
+      "csv": "Paldea Evolved.csv",
+      "set_name": "Paldea Evolved",
+      "cards": 279
+    },
+    {
+      "csv": "Obsidian Flames.csv",
+      "set_name": "Obsidian Flames",
+      "cards": 230
+    },
+    {
+      "csv": "151.csv",
+      "set_name": "151",
+      "cards": 207
+    },
+    {
+      "csv": "Paradox Rift.csv",
+      "set_name": "Paradox Rift",
+      "cards": 266
+    },
+    {
+      "csv": "Legend Maker.csv",
+      "set_name": "Legend Maker",
+      "cards": 93
+    },
+    {
+      "csv": "Temporal Forces.csv",
+      "set_name": "Temporal Forces",
+      "cards": 218
+    },
+    {
+      "csv": "Shrouded Fable.csv",
+      "set_name": "Shrouded Fable",
+      "cards": 99
+    },
+    {
+      "csv": "Stellar Crown.csv",
+      "set_name": "Stellar Crown",
+      "cards": 175
+    },
+    {
+      "csv": "Paldean Fates.csv",
+      "set_name": "Paldean Fates",
+      "cards": 245
+    },
+    {
+      "csv": "Team Rocket Returns.csv",
+      "set_name": "Team Rocket Returns",
+      "cards": 111
+    },
+    {
+      "csv": "Twilight Masquerade.csv",
+      "set_name": "Twilight Masquerade",
+      "cards": 226
+    },
+    {
+      "csv": "POP Series 5.csv",
+      "set_name": "POP Series 5",
+      "cards": 17
+    },
+    {
+      "csv": "Prismatic Evolutions.csv",
+      "set_name": "Prismatic Evolutions",
+      "cards": 180
+    },
+    {
+      "csv": "Journey Together.csv",
+      "set_name": "Journey Together",
+      "cards": 190
+    },
+    {
+      "csv": "Black Bolt.csv",
+      "set_name": "Black Bolt",
+      "cards": 172
+    },
+    {
+      "csv": "Phantasmal Flames.csv",
+      "set_name": "Phantasmal Flames",
+      "cards": 130
+    },
+    {
+      "csv": "White Flare.csv",
+      "set_name": "White Flare",
+      "cards": 173
+    },
+    {
+      "csv": "Surging Sparks.csv",
+      "set_name": "Surging Sparks",
+      "cards": 252
+    },
+    {
+      "csv": "Perfect Order.csv",
+      "set_name": "Perfect Order",
+      "cards": 124
+    },
+    {
+      "csv": "Destined Rivals.csv",
+      "set_name": "Destined Rivals",
+      "cards": 244
+    },
+    {
+      "csv": "Mega Evolution.csv",
+      "set_name": "Mega Evolution",
+      "cards": 188
+    },
+    {
+      "csv": "Secret Wonders.csv",
+      "set_name": "Secret Wonders",
+      "cards": 132
+    },
+    {
+      "csv": "Ascended Heroes.csv",
+      "set_name": "Ascended Heroes",
+      "cards": 295
+    },
+    {
+      "csv": "POP Series 8.csv",
+      "set_name": "POP Series 8",
+      "cards": 17
+    },
+    {
+      "csv": "Fossil.csv",
+      "set_name": "Fossil",
+      "cards": 62
+    },
+    {
+      "csv": "Gym Challenge.csv",
+      "set_name": "Gym Challenge",
+      "cards": 132
+    },
+    {
+      "csv": "Sandstorm.csv",
+      "set_name": "Sandstorm",
+      "cards": 100
+    },
+    {
+      "csv": "Base Set 2.csv",
+      "set_name": "Base Set 2",
+      "cards": 130
+    },
+    {
+      "csv": "Neo Revelation.csv",
+      "set_name": "Neo Revelation",
+      "cards": 66
+    },
+    {
+      "csv": "Nintendo Black Star Promos.csv",
+      "set_name": "Nintendo Black Star Promos",
+      "cards": 40
+    },
+    {
+      "csv": "Dragon Frontiers.csv",
+      "set_name": "Dragon Frontiers",
+      "cards": 101
+    },
+    {
+      "csv": "Neo Genesis.csv",
+      "set_name": "Neo Genesis",
+      "cards": 111
+    },
+    {
+      "csv": "Expedition Base Set.csv",
+      "set_name": "Expedition Base Set",
+      "cards": 165
+    },
+    {
+      "csv": "EX Trainer Kit 2 Minun.csv",
+      "set_name": "EX Trainer Kit 2 Minun",
+      "cards": 12
+    },
+    {
+      "csv": "Legendary Collection.csv",
+      "set_name": "Legendary Collection",
+      "cards": 110
+    },
+    {
+      "csv": "Great Encounters.csv",
+      "set_name": "Great Encounters",
+      "cards": 106
+    },
+    {
+      "csv": "Holon Phantoms.csv",
+      "set_name": "Holon Phantoms",
+      "cards": 111
+    },
+    {
+      "csv": "Emerald.csv",
+      "set_name": "Emerald",
+      "cards": 107
+    },
+    {
+      "csv": "DP Black Star Promos.csv",
+      "set_name": "DP Black Star Promos",
+      "cards": 56
+    },
+    {
+      "csv": "Platinum.csv",
+      "set_name": "Platinum",
+      "cards": 133
+    }
+  ]
 }

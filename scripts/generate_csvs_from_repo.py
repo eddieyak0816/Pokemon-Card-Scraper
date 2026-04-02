@@ -11,6 +11,8 @@ IMG_ROOT = os.path.join(os.getcwd(), "images")
 COLS = [
     "Image_Names", "Card_ID", "Card_Name", "Super_Type", "Types", "Set_Name", "Number", "Rarity",
     "Large_Image_URL", "Small_Image_URL",
+    "HP", "Abilities", "Attacks_JSON", "Attack_Names", "Attack_Damages", "Attack_Texts",
+    "Weaknesses", "Resistances", "Retreat_Cost", "Evolves_From", "Artist", "FlavorText",
     "Normal_low", "Normal_mid", "Normal_high", "Normal_market", "Normal_directLow",
     "Holofoil_low", "Holofoil_mid", "Holofoil_high", "Holofoil_market", "Holofoil_directLow",
     "ReverseHolofoil_low", "ReverseHolofoil_mid", "ReverseHolofoil_high", "ReverseHolofoil_market", "ReverseHolofoil_directLow",
@@ -56,7 +58,9 @@ def main():
     if os.path.exists(simulate_flag):
         sim_csv = "SIMULATED_SET.csv"
         if sim_csv not in existing:
-            rows = [["000.jpg", "sim-card-001", "Sim Card", "Pokémon", "SimType", "Simulated Set", "1", "Common", "https://example.com/large.jpg", "https://example.com/small.jpg"] + [None] * 25]
+            # include metadata placeholders for the new metadata columns (11 metadata cols)
+            meta_placeholders = [None] * 11
+            rows = [["000.jpg", "sim-card-001", "Sim Card", "Pokémon", "SimType", "Simulated Set", "1", "Common", "https://example.com/large.jpg", "https://example.com/small.jpg"] + meta_placeholders + [None] * 25]
             df = pd.DataFrame(rows, columns=COLS)
             out_path = os.path.join(CSV_DIR, sim_csv)
             df.to_csv(out_path, index=False)
@@ -99,10 +103,45 @@ def main():
             if types:
                 types = "__".join(types)
 
+            # metadata
+            hp = card.get('hp')
+            abilities = card.get('abilities')
+            abilities_json = json.dumps(abilities, ensure_ascii=False) if abilities else None
+            attacks = card.get('attacks')
+            attacks_json = json.dumps(attacks, ensure_ascii=False) if attacks else None
+            if attacks:
+                attack_names = "|".join([a.get('name', '') for a in attacks])
+                attack_damages = "|".join([a.get('damage', '') or '' for a in attacks])
+                attack_texts = "|".join([(' '.join(a.get('text', [])) if isinstance(a.get('text'), list) else (a.get('text') or '')) for a in attacks])
+            else:
+                attack_names = None
+                attack_damages = None
+                attack_texts = None
+
+            weaknesses = card.get('weaknesses')
+            if weaknesses:
+                weaknesses = "|".join([f"{w.get('type')}:{w.get('value')}" for w in weaknesses])
+
+            resistances = card.get('resistances')
+            if resistances:
+                resistances = "|".join([f"{r.get('type')}:{r.get('value')}" for r in resistances])
+
+            retreat = card.get('retreatCost')
+            if retreat:
+                retreat = "__".join(retreat)
+
+            evolves_from = card.get('evolvesFrom')
+            artist = card.get('artist')
+            flavor = card.get('flavorText')
+
             # prices not in repo JSON, keep empty columns to match layout
             prices = [None] * 25
 
-            row = [img_name, card.get('id'), card.get('name'), card.get('supertype'), types, set_name, card.get('number'), card.get('rarity'), large, small] + prices
+            row = [
+                img_name, card.get('id'), card.get('name'), card.get('supertype'), types, set_name, card.get('number'), card.get('rarity'), large, small,
+                hp, abilities_json, attacks_json, attack_names, attack_damages, attack_texts,
+                weaknesses, resistances, retreat, evolves_from, artist, flavor
+            ] + prices
             rows.append(row)
 
         df = pd.DataFrame(rows, columns=COLS)

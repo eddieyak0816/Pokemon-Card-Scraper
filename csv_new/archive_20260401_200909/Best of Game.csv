@@ -1,0 +1,10 @@
+Image_Names,Card_ID,Card_Name,Super_Type,Types,Set_Name,Number,Rarity,Large_Image_URL,Small_Image_URL,Normal_low,Normal_mid,Normal_high,Normal_market,Normal_directLow,Holofoil_low,Holofoil_mid,Holofoil_high,Holofoil_market,Holofoil_directLow,ReverseHolofoil_low,ReverseHolofoil_mid,ReverseHolofoil_high,ReverseHolofoil_market,ReverseHolofoil_directLow,FirstEditionHolofoil_low,FirstEditionHolofoil_mid,FirstEditionHolofoil_high,FirstEditionHolofoil_market,FirstEditionHolofoil_directLow,FirstEditionNormal_low,FirstEditionNormal_mid,FirstEditionNormal_high,FirstEditionNormal_market,FirstEditionNormal_directLow
+000.jpg,bp-1,Electabuzz,Pokémon,Lightning,Best of Game,1,Promo,https://images.pokemontcg.io/bp/1_hires.png,https://images.pokemontcg.io/bp/1.png,,,,,,,,,,,,,,,,,,,,,,,,,
+001.jpg,bp-2,Hitmonchan,Pokémon,Fighting,Best of Game,2,Promo,https://images.pokemontcg.io/bp/2_hires.png,https://images.pokemontcg.io/bp/2.png,,,,,,,,,,,,,,,,,,,,,,,,,
+002.jpg,bp-3,Professor Elm,Trainer,,Best of Game,3,Promo,https://images.pokemontcg.io/bp/3_hires.png,https://images.pokemontcg.io/bp/3.png,,,,,,,,,,,,,,,,,,,,,,,,,
+003.jpg,bp-4,Rocket's Scizor,Pokémon,Metal,Best of Game,4,Promo,https://images.pokemontcg.io/bp/4_hires.png,https://images.pokemontcg.io/bp/4.png,,,,,,,,,,,,,,,,,,,,,,,,,
+004.jpg,bp-5,Rocket's Sneasel,Pokémon,Darkness,Best of Game,5,Promo,https://images.pokemontcg.io/bp/5_hires.png,https://images.pokemontcg.io/bp/5.png,,,,,,,,,,,,,,,,,,,,,,,,,
+005.jpg,bp-6,Dark Ivysaur,Pokémon,Grass,Best of Game,6,Promo,https://images.pokemontcg.io/bp/6_hires.png,https://images.pokemontcg.io/bp/6.png,,,,,,,,,,,,,,,,,,,,,,,,,
+006.jpg,bp-7,Dark Venusaur,Pokémon,Grass,Best of Game,7,Promo,https://images.pokemontcg.io/bp/7_hires.png,https://images.pokemontcg.io/bp/7.png,,,,,,,,,,,,,,,,,,,,,,,,,
+007.jpg,bp-8,Rocket's Mewtwo,Pokémon,Psychic,Best of Game,8,Promo,https://images.pokemontcg.io/bp/8_hires.png,https://images.pokemontcg.io/bp/8.png,,,,,,,,,,,,,,,,,,,,,,,,,
+008.jpg,bp-9,Rocket's Hitmonchan,Pokémon,Fighting,Best of Game,9,Promo,https://images.pokemontcg.io/bp/9_hires.png,https://images.pokemontcg.io/bp/9.png,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,13 @@
+Image_Names,Card_ID,Card_Name,Super_Type,Types,Set_Name,Number,Rarity,Large_Image_URL,Small_Image_URL,Normal_low,Normal_mid,Normal_high,Normal_market,Normal_directLow,Holofoil_low,Holofoil_mid,Holofoil_high,Holofoil_market,Holofoil_directLow,ReverseHolofoil_low,ReverseHolofoil_mid,ReverseHolofoil_high,ReverseHolofoil_market,ReverseHolofoil_directLow,FirstEditionHolofoil_low,FirstEditionHolofoil_mid,FirstEditionHolofoil_high,FirstEditionHolofoil_market,FirstEditionHolofoil_directLow,FirstEditionNormal_low,FirstEditionNormal_mid,FirstEditionNormal_high,FirstEditionNormal_market,FirstEditionNormal_directLow
+000.jpg,tk2b-1,Arcanine,Pokémon,Fire,EX Trainer Kit 2 Minun,1,,https://images.pokemontcg.io/tk2b/1_hires.png,https://images.pokemontcg.io/tk2b/1.png,,,,,,,,,,,,,,,,,,,,,,,,,
+001.jpg,tk2b-2,Charmander,Pokémon,Fire,EX Trainer Kit 2 Minun,2,,https://images.pokemontcg.io/tk2b/2_hires.png,https://images.pokemontcg.io/tk2b/2.png,,,,,,,,,,,,,,,,,,,,,,,,,
+002.jpg,tk2b-3,Charmeleon,Pokémon,Fire,EX Trainer Kit 2 Minun,3,Uncommon,https://images.pokemontcg.io/tk2b/3_hires.png,https://images.pokemontcg.io/tk2b/3.png,,,,,,,,,,,,,,,,,,,,,,,,,
+003.jpg,tk2b-4,Growlithe,Pokémon,Fire,EX Trainer Kit 2 Minun,4,,https://images.pokemontcg.io/tk2b/4_hires.png,https://images.pokemontcg.io/tk2b/4.png,,,,,,,,,,,,,,,,,,,,,,,,,
+004.jpg,tk2b-5,Mareep,Pokémon,Lightning,EX Trainer Kit 2 Minun,5,,https://images.pokemontcg.io/tk2b/5_hires.png,https://images.pokemontcg.io/tk2b/5.png,,,,,,,,,,,,,,,,,,,,,,,,,
+005.jpg,tk2b-6,Minun,Pokémon,Lightning,EX Trainer Kit 2 Minun,6,,https://images.pokemontcg.io/tk2b/6_hires.png,https://images.pokemontcg.io/tk2b/6.png,,,,,,,,,,,,,,,,,,,,,,,,,
+006.jpg,tk2b-7,Vulpix,Pokémon,Fire,EX Trainer Kit 2 Minun,7,,https://images.pokemontcg.io/tk2b/7_hires.png,https://images.pokemontcg.io/tk2b/7.png,,,,,,,,,,,,,,,,,,,,,,,,,
+007.jpg,tk2b-8,Celio's Network,Trainer,,EX Trainer Kit 2 Minun,8,,https://images.pokemontcg.io/tk2b/8_hires.png,https://images.pokemontcg.io/tk2b/8.png,,,,,,,,,,,,,,,,,,,,,,,,,
+008.jpg,tk2b-9,Energy Search,Trainer,,EX Trainer Kit 2 Minun,9,,https://images.pokemontcg.io/tk2b/9_hires.png,https://images.pokemontcg.io/tk2b/9.png,,,,,,,,,,,,,,,,,,,,,,,,,
+009.jpg,tk2b-10,Potion,Trainer,,EX Trainer Kit 2 Minun,10,,https://images.pokemontcg.io/tk2b/10_hires.png,https://images.pokemontcg.io/tk2b/10.png,,,,,,,,,,,,,,,,,,,,,,,,,
+010.jpg,tk2b-11,Fire Energy,Energy,,EX Trainer Kit 2 Minun,11,,https://images.pokemontcg.io/tk2b/11_hires.png,https://images.pokemontcg.io/tk2b/11.png,,,,,,,,,,,,,,,,,,,,,,,,,
+011.jpg,tk2b-12,Lightning Energy,Energy,,EX Trainer Kit 2 Minun,12,,https://images.pokemontcg.io/tk2b/12_hires.png,https://images.pokemontcg.io/tk2b/12.png,,,,,,,,,,,,,,,,,,,,,,,,,
